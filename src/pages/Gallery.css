@@ -1,0 +1,136 @@
+.gallery-container {
+    padding: 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.gallery-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #435164;
+    font-size: 1.2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery-card {
+    background: #ecf0f1;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #b9b9b9;
+    transform: rotate(-2deg);
+}
+
+.gallery-card:nth-child(2n) {
+    transform: rotate(1.5deg);
+}
+
+.gallery-card:nth-child(3n) {
+    transform: rotate(-1deg);
+}
+
+.gallery-card:hover {
+    transform: scale(1.15) rotate(0deg);
+    border-color: #2563eb;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pet-section2 {
+    margin-bottom: 3rem;
+}
+
+.pet-section2 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.5rem;
+}
+
+.pet-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    color: #435164;
+}
+
+.error {
+    color: red;
+}
+
+.filter-buttons2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn2 {
+    padding: 10px 20px;
+    border: 2px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn2:hover {
+    background: #b8bbc4;
+    transform: translateY(-2px);
+}
+
+.filter-btn2.active {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        padding: 3rem 1rem;
+    }
+
+    .gallery-container h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .filter-buttons2 {
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .filter-btn2 {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}

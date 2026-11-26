@@ -1,0 +1,103 @@
+.release-page {
+    padding: 2rem 1rem;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+}
+
+.release-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.release-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.release-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.release-header p {
+    font-size: 1.2rem;
+    color: #2c3441;
+}
+
+.release-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.release-form h3 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.release-form h3:first-child {
+    margin-top: 0;
+}
+
+.release-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.release-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #15181b;
+}
+
+.release-form-group input, .release-form-group select, .release-form-group textarea {
+    width: 95%;
+    padding: 0.8rem;
+    border: 2px solid #d1d1d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.release-form-group input:focus, .release-form-group select:focus, .release-form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.release-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn2 {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn2:hover {
+    background: #163c8f;
+}
+
+@media (max-width: 768px) {
+    .release-page {
+        padding: 1rem;
+    }
+
+    .release-form {
+        padding: 1.5rem;
+    }
+
+    .release-header h1 {
+        font-size: 2rem;
+    }
+}

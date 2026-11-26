@@ -1,0 +1,351 @@
+.adopt-page {
+    padding: 0;
+}
+
+.adopt-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.adopt-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.adopt-header p {
+    font-size: 1.2rem;
+    color: #435164;
+}
+
+/* Form */
+.form-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.pet-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pet-details img {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.pet-info p {
+    margin-bottom: 0.5rem;
+    color: #435164;
+}
+
+.adoption-form h3 {
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #d6d6d6;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.submit-btn {
+    flex: 2;
+    background-color: #2563eb;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #143fb6;
+}
+
+/* Pets */
+.pets {
+    padding: 0 2rem 5rem;
+}
+
+.filter-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btns button {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btns button.active, .filter-btns button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.pet-card {
+    background: #ecf0f1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pet-info {
+    padding: 1rem;
+}
+
+.pet-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.pet-info p {
+    margin-bottom: 0.2rem;
+    color: #2c333d;
+}
+
+.adopt-btn2 {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-btn2:hover {
+    background: #143fb6;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #363e49;
+    z-index: 1001;
+}
+
+.close-btn:hover {
+    color: #161e2b;
+}
+
+.modal-header {
+    padding: 2rem 2rem 1rem;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: black;
+}
+
+.modal-body {
+    padding: 1rem 2rem 2rem;
+}
+
+.modal-body .pet-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.modal-body .pet-details img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal-body .pet-info h3 {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.modal-body .pet-info p {
+    margin-bottom: 0.5rem;
+    color: #292b2e;
+}
+
+.modal-body .adoption-form {
+    margin-top: 1rem;
+}
+
+.modal-body .adoption-form h3 {
+    margin-bottom: 1.5rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cancel-btn {
+    flex: 1;
+    background: red;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: #232933
+}
+
+@media (max-width: 1200px) {
+    .pets-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .pets-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .form-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .filter-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btns button {
+        width: 200px;
+    }
+
+    .pets-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .adopt-header h1 {
+        font-size: 2rem;
+    }
+
+    .modal-body .pet-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-body .pet-details img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}

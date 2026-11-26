@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = ({ isLoggedIn, onLogout }) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleAbout = (e) => {
     e.preventDefault();
-    if (window.location.pathname === "/") {
+    if (location.pathname === "/") {
       const aboutSection = document.getElementById('about-us');
       aboutSection?.scrollIntoView({behavior: 'smooth'});
     } else {

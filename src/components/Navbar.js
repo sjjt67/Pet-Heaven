@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo-link"><img src="/images/petheavenlogotrans.png" alt="Pet Heaven Logo" className="navbar-logo" /></Link>
+      <Link to="/" className="logo-link"><img src={`${process.env.PUBLIC_URL}/images/petheavenlogotrans.png`} alt="Pet Heaven Logo" className="navbar-logo" /></Link>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><a href="#about-us" onClick={handleAbout}>About Us</a></li>

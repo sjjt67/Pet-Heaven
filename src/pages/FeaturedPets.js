@@ -5,13 +5,13 @@ import './FeaturedPets.css';
 const FeaturedPets = () => {
     const featuredPets = [
         // Dogs
-        { id: 1, name: "Max", type: "Dog", breed: "Golden Retriever", age: "2 years", gender: "Male", image: "/images/golden.jpg"},
-        { id: 2, name: "Coco", type: "Dog", breed: "Corgi", age: "3 years", gender: "Female", image: "/images/corgi.png"},
-        { id: 3, name: "Peanut", type: "Dog", breed: "Beagle", age: "1 year", gender: "Male", image: "/images/beagle.jpg"},
+        { id: 1, name: "Max", type: "Dog", breed: "Golden Retriever", age: "2 years", gender: "Male", image: `${process.env.PUBLIC_URL}/images/golden.jpg`},
+        { id: 2, name: "Coco", type: "Dog", breed: "Corgi", age: "3 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/corgi.png`},
+        { id: 3, name: "Peanut", type: "Dog", breed: "Beagle", age: "1 year", gender: "Male", image: `${process.env.PUBLIC_URL}/images/beagle.jpg`},
         // Cats
-        { id: 4, name: "Luna", type: "Cat", breed: "Ragdoll", age: "2 years", gender: "Female", image: "/images/ragdoll.jpg"},
-        { id: 5, name: "Garfield", type: "Cat", breed: "Persian", age: "3 years", gender: "Male", image: "/images/persian.jpg"},
-        { id: 6, name: "Miao", type: "Cat", breed: "Munchkin", age: "1 year", gender: "Female", image: "/images/munchkin.jpg"}
+        { id: 4, name: "Luna", type: "Cat", breed: "Ragdoll", age: "2 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/ragdoll.jpg`},
+        { id: 5, name: "Garfield", type: "Cat", breed: "Persian", age: "3 years", gender: "Male", image: `${process.env.PUBLIC_URL}/images/persian.jpg`},
+        { id: 6, name: "Miao", type: "Cat", breed: "Munchkin", age: "1 year", gender: "Female", image: `${process.env.PUBLIC_URL}/images/munchkin.jpg`}
     ];
 
     return (

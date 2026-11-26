@@ -8,7 +8,7 @@ const Hero = () => {
             className="hero"
             style={{
                 background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('/images/hero-bg.jpg')`,
+                url('${process.env.PUBLIC_URL}/images/hero-bg.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'

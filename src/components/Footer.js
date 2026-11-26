@@ -8,14 +8,14 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <Link to="/"><img src="/images/petheavenlogo.png" alt="Pet Heaven Logo" /></Link>
+                        <Link to="/"><img src= {`${process.env.PUBLIC_URL}/images/petheavenlogo.png`} alt="Pet Heaven Logo" /></Link>
                     </div>
                     <div className="footer-section">
                         <h4>Follow Us</h4>
                         <div className="social-links">
-                            <a href="https://www.facebook.com"><img src="/images/facebook.png" alt="Facebook" /></a>
-                            <a href="https://www.instagram.com"><img src="/images/instagram.png" alt="Instagram" /></a>
-                            <a href="https://x.com"><img src="/images/twitter.png" alt="X" /></a>
+                            <a href="https://www.facebook.com"><img src={`${process.env.PUBLIC_URL}/images/facebook.png`} alt="Facebook" /></a>
+                            <a href="https://www.instagram.com"><img src={`${process.env.PUBLIC_URL}/images/instagram.png`} alt="Instagram" /></a>
+                            <a href="https://x.com"><img src={`${process.env.PUBLIC_URL}/images/twitter.png`} alt="X" /></a>
                         </div>
                     </div>
                     <div className="footer-section">

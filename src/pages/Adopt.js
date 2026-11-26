@@ -9,17 +9,17 @@ const Adopt = () => {
 
   const pets = [
     // Dogs
-    { id: 1, name: "Max", type: "Dog", breed: "Golden Retriever", age: "2 years", gender: "Male", image: "/images/golden.jpg"},
-    { id: 2, name: "Coco", type: "Dog", breed: "Corgi", age: "3 years", gender: "Female", image: "/images/corgi.png"},
-    { id: 3, name: "Peanut", type: "Dog", breed: "Beagle", age: "1 year", gender: "Male", image: "/images/beagle.jpg"},
-    { id: 4, name: "Doge", type: "Dog", breed: "Shiba Inu", age: "3 years", gender: "Female", image: "/images/shiba.jpg"},
-    { id: 5, name: "Toby", type: "Dog", breed: "Pug", age: "1 year", gender: "Male", image: "/images/pug.jpg"},
-    // Cats
-    { id: 6, name: "Luna", type: "Cat", breed: "Ragdoll", age: "2 years", gender: "Female", image: "/images/ragdoll.jpg"},
-    { id: 7, name: "Garfield", type: "Cat", breed: "Persian", age: "3 years", gender: "Male", image: "/images/persian.jpg"},
-    { id: 8, name: "Miao", type: "Cat", breed: "Munchkin", age: "1 year", gender: "Female", image: "/images/munchkin.jpg"},
-    { id: 9, name: "Tiger", type: "Cat", breed: "Scottish Fold", age: "1 year", gender: "Male", image: "/images/scottish.jpg"},
-    { id: 10, name: "Milo", type: "Cat", breed: "Munchkin", age: "2 years", gender: "Female", image: "/images/siamese.jpg"}
+    { id: 1, name: "Max", type: "Dog", breed: "Golden Retriever", age: "2 years", gender: "Male", image: `${process.env.PUBLIC_URL}/images/golden.jpg`},
+    { id: 2, name: "Coco", type: "Dog", breed: "Corgi", age: "3 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/corgi.png`},
+    { id: 3, name: "Peanut", type: "Dog", breed: "Beagle", age: "1 year", gender: "Male", image: `${process.env.PUBLIC_URL}/images/beagle.jpg`},
+    { id: 4, name: "Doge", type: "Dog", breed: "Shiba Inu", age: "3 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/shiba.jpg`},
+    { id: 5, name: "Toby", type: "Dog", breed: "Pug", age: "1 year", gender: "Male", image: `${process.env.PUBLIC_URL}/images/pug.jpg`},
+    // Cats{${
+    { id: 6, name: "Luna", type: "Cat", breed: "Ragdoll", age: "2 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/ragdoll.jpg`},
+    { id: 7, name: "Garfield", type: "Cat", breed: "Persian", age: "3 years", gender: "Male", image: `${process.env.PUBLIC_URL}/images/persian.jpg`},
+    { id: 8, name: "Miao", type: "Cat", breed: "Munchkin", age: "1 year", gender: "Female", image: `${process.env.PUBLIC_URL}/images/munchkin.jpg`},
+    { id: 9, name: "Tiger", type: "Cat", breed: "Scottish Fold", age: "1 year", gender: "Male", image: `${process.env.PUBLIC_URL}/images/scottish.jpg`},
+    { id: 10, name: "Milo", type: "Cat", breed: "Munchkin", age: "2 years", gender: "Female", image: `${process.env.PUBLIC_URL}/images/siamese.jpg`}
   ];
 
   const filterPets = filter === 'all' ? pets : pets.filter(pet => pet.type.toLowerCase() === filter);
